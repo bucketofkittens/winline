@@ -126,9 +126,9 @@ body {
 
 	footer {
 		position: relative;
-		bottom: 400px;
+		bottom: -20px;
 		width: 1250px;
-		height: 400px;
+		height: 380px;
 		margin: 0px auto;
 		nav {
 			border-top: 3px solid #000000;
@@ -243,6 +243,158 @@ body {
 	}
 
 	#page {
-		height: 100%;
+		width: 1250px;
+		margin: 10px auto;
+		overflow: hidden;
+		#left {
+			width: 250px;
+			display: inline-block;
+			float: left;
+			h6 {
+				position: absolute;
+				top: 45%;
+				left: 20px;
+				color: #ffffff;
+				font-size: 18px;
+				line-height: 25px;
+			}
+		}
+
+		#right {
+			width: 250px;
+			display: inline-block;
+			float: right;
+			.nocrop {
+				top: -20px;
+			}
+			.onin {
+				color: #fff;
+				font-size: 12px;
+				display: block;
+				position: relative;
+				left: 35%;
+				top: -10px;
+			}
+		}
+
+		#center {
+			width: 700px;
+			display: inline-block;
+			margin-left: 25px;
+			.promonav {
+				width: 100%;
+				height: 50px;
+				background: #000000;
+				background: -moz-linear-gradient(top,  #000000 0%, #000000 50%, #353535 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(50%,#000000), color-stop(100%,#353535));
+				background: -webkit-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: -o-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: -ms-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: linear-gradient(to bottom,  #000000 0%,#000000 50%,#353535 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#353535',GradientType=0 );
+				li {
+					display: inline-block;
+					width: 135px;
+					height: 100%;
+					text-align: center;
+					vertical-align: middle;
+					&.current {
+						background: #303030;
+						background: -moz-linear-gradient(top,  #222222 0%, #222222 50%, #353535 100%);
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(50%,#222222), color-stop(100%,#353535));
+						background: -webkit-linear-gradient(top,  #222222 0%,#222222 50%,#353535 100%);
+						background: -o-linear-gradient(top,  #222222 0%,#222222 50%,#353535 100%);
+						background: -ms-linear-gradient(top,  #222222 0%,#222222 50%,#353535 100%);
+						background: linear-gradient(to bottom,  #222222 0%,#222222 50%,#353535 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#353535',GradientType=0 );
+					}
+					a {
+						color: #ffffff;
+						text-decoration: none;
+						font-size: 13px;
+						width: 130px;
+						height: 30px;
+						display: block;
+						vertical-align: middle;
+						padding: 0px 2px;
+						margin-top: 10px;
+						border-right: 1px solid #4b4b4b;
+					}
+					&:last-child a {
+						border: none;
+					}
+				}
+			}
+		}
+		.box {
+			display: block;
+			width: 100%;
+			margin-top: 20px;
+			border-radius: 10px;
+			background: #333333;
+			overflow: hidden;
+			position: relative;
+			.boxhead {
+				width: 100%;
+				height: 27px;
+				position: relative;
+				padding: 10px 0px 0px 20px;
+				vertical-align: middle;
+				z-index: 10;
+				background: #000000;
+				background: -moz-linear-gradient(top,  #000000 0%, #000000 50%, #353535 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(50%,#000000), color-stop(100%,#353535));
+				background: -webkit-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: -o-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: -ms-linear-gradient(top,  #000000 0%,#000000 50%,#353535 100%);
+				background: linear-gradient(to bottom,  #000000 0%,#000000 50%,#353535 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#353535',GradientType=0 );
+				h1 {
+					color: #ffffff;
+					font-size: 15px;
+					text-transform: uppercase;
+					display: inline-block;
+				}
+				a {
+					position: absolute;
+					right: 30px;
+					width: 20px;
+					height: 20px;
+					background: rgba(255, 255, 255, 0.2);
+					vertical-align: middle;
+					i {
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 5px 0 5px 5px;
+						border-color: transparent transparent transparent #ff8c00;
+						position: absolute;
+						top: 5px;
+						right: 7px;
+						&.current {
+							border-width: 5px 5px 0 5px;
+							border-color: #ff8c00 transparent transparent transparent;
+							top: 7px;
+							right: 5px;
+						}
+					}
+				}
+				img {
+					height: 17px;
+					width: 40px;
+					vertical-align: middle;
+					margin-right: 10px;
+					display: inline-block;
+				}
+			}
+			img {
+				width: 100%;
+				display: block;
+				cursor: pointer;
+				position: relative;
+			}
+		}
 	}
 }
+
+
