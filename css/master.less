@@ -258,6 +258,144 @@ body {
 				font-size: 18px;
 				line-height: 25px;
 			}
+			.news {
+				width: 100%;
+				li {
+					width: 100%;
+					height: 45px;
+					padding: 10px;
+					background: #ebebeb;
+					&:nth-child(2n) {
+						background: #ffffff;
+						border-top: 1px solid #cfcfcf;
+						border-bottom: 1px solid #cfcfcf;
+					}
+					i {
+						width: 40px;
+						padding-left: 10px;
+						vertical-align: top;
+						font-size: 12px;
+						line-height: 17px;
+						color: #000000;
+						display: inline-block;
+					}
+					a {
+						width: 170px;
+						vertical-align: top;
+						font-size: 12px;
+						line-height: 15px;
+						color: #000000;
+						display: inline-block;
+						text-decoration: none;
+						b {
+							color: #ff8c00;
+							font-weight: bold;
+							display: block;
+							line-height: 17px;
+						}
+					}
+				}
+			}
+			.onall {
+				color: #fff;
+				font-size: 12px;
+				display: block;
+				margin: 10px 0px 10px 37%;
+			}
+			.type {
+				width: 100%;
+				height: 30px;
+				border-top: 3px solid #000000;
+				box-shadow: inset 0px 15px 0px 0px rgba(255, 255, 255, 0.1);
+				background: #222222;
+				background: -moz-linear-gradient(top,  #222222 0%, #333333 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#333333));
+				background: -webkit-linear-gradient(top,  #222222 0%,#333333 100%);
+				background: -o-linear-gradient(top,  #222222 0%,#333333 100%);
+				background: -ms-linear-gradient(top,  #222222 0%,#333333 100%);
+				background: linear-gradient(to bottom,  #222222 0%,#333333 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=0 );
+				&:nth-child(3) {
+					border-bottom: 2px solid #000000;
+					li {
+						width: 50%;
+						img {
+							width: 20px;
+							height: 20px;
+						}
+					}
+				}
+				&:nth-child(2) {
+					li:first-child img {
+						width: 30px;
+						height: 20px;
+					}
+				}
+				li {
+					display: inline-block;
+					width: 33%;
+					height: 100%;
+					border-left: 1px solid #202020;
+					border-right: 1px solid #4b4b4b;
+					text-align: center;
+					vertical-align: middle;
+					margin-left: -4px;
+					&:first-child {
+						border-left: none;
+					}
+					&:last-child {
+						border-right: none;
+					}
+					a {
+						font-size: 12px;
+						color: #ffffff;
+						text-decoration: none;
+						vertical-align: middle;
+						position: relative;
+						top: 5px;
+						img {
+							width: 15px;
+							height: 15px;
+							display: inline-block;
+							vertical-align: middle;
+							margin: 0px 5px;
+						}
+					}
+				}
+			}
+			.sport {
+				width: 100%;
+				li {
+					width: 100%;
+					height: 20px;
+					padding-top: 10px;
+					i {
+						display: inline-block;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 5px 0 5px 5px;
+						border-color: transparent transparent transparent #ff8c00;
+						vertical-align: middle;
+						margin: 0px 10px;
+					}
+					a {
+						display: inline-block;
+						font-size: 13px;
+						color: #ffffff;
+						text-decoration: none;
+						vertical-align: middle;
+					}
+					img {
+						width: 30px;
+						height: 20px;
+						display: inline-block;
+						vertical-align: middle;
+						float: right;
+						margin-right: 10px;
+					}
+				}
+			}
 		}
 
 		#right {
